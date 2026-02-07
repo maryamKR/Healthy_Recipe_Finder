@@ -31,7 +31,7 @@
 
           body { @apply font-Nunito text-xl text-main}
           nav { @apply flex justify-between gap-[40px] font-semibold text-[18px] tracking-[.3px] capitalize}
-        button { @apply px-[16px] py-[12px] bg-[#163A34] text-[20px] tracking-[0.5px] font-bold text-center text-white rounded-[10px] }
+        button { @apply bg-[#163A34] text-[20px] tracking-[0.5px] font-bold text-center text-white rounded-[10px] }
         .flex-between-center {@apply flex justify-between items-center}
         .relative {@apply relative w-full}
         img {@apply align-middle}
@@ -55,11 +55,21 @@
       </div>
 
     </nav>
-    <button>browse recipes</button>
+    <button class="px-[16px] py-[12px]">browse recipes</button>
   </header>
 
-
-
+<main>
+  <section class="container mx-auto">
+    <div class="text-center my-[80px] space-y-[40px]">
+    <div class="space-y-[12px]">
+      <h1>Healthy meals, zero fuss</h1>
+      <p class="max-w-[580px] mx-auto">Discover eight quick, whole-food recipes that you can cook tonight—no processed junk, no guesswork.</p>
+    </div>
+  <button class="px-[32px] py-[16px]">Start exploring</button>
+  </div>
+  <img src="./assets/women.jpg" class="rounded-[12px] r" alt="Hero">
+  </section>
+</main>
 </body>
 
 </html>
