@@ -16,7 +16,7 @@
             --color-main: #163A34;
             --color-orange:#FE9F6B;
             --color-body: #F6F5F1;
-            --color-border: #E9EDE8;
+            --color-light-grey: #E9EDE8;
             /* fonts */
             --font-Nunito: "Nunito", sans-serif;
              /* text-size  */
@@ -35,9 +35,10 @@
           nav { @apply flex justify-between gap-[40px] font-semibold text-[18px] tracking-[.3px] capitalize}
         button { @apply bg-[#163A34] text-[20px] tracking-[0.5px] font-bold text-center text-white rounded-[10px] }
         .flex-between-center {@apply flex justify-between items-center}
+        .flex-center {@apply flex justify-center items-center}
         .relative {@apply relative w-full}
         img {@apply align-middle}
-        .back {@apply flex justify-center items-center w-[60px] h-[60px] rounded-[12px] bg-white border border-border}
+        .back {@apply flex justify-center items-center w-[60px] h-[60px] rounded-[12px] bg-white border border-light-grey}
   </style>
 
 </head>
@@ -102,13 +103,21 @@
     </div>
   </section>
 
-  <section class="flex justify-center items-center gap-[48px] py-[96px]">
+  <section class="flex-center gap-[48px] py-[96px]">
     <div class="space-y-[20px] max-w-[590px]">
       <h2>Built for real life</h2>
-      <p>Cooking shouldn’t be complicated. These recipes come in under <span class="relative"><span class="absolute w-[102px] h-[12px] bg-orange rounded-[3px] z-[-1] bottom-[4px]"></span>30 minutes</span> of active time, fit busy schedules, and taste good enough to repeat. </p>
-      <p>Whether you’re new to the kitchen or just need fresh ideas, we’ve got you covered.</p>
+      <p class="body">Cooking shouldn’t be complicated. These recipes come in under <span class="relative"><span class="absolute w-[102px] h-[12px] bg-orange rounded-[3px] z-[-1] bottom-[4px]"></span>30 minutes</span> of active time, fit busy schedules, and taste good enough to repeat. </p>
+      <p class="body">Whether you’re new to the kitchen or just need fresh ideas, we’ve got you covered.</p>
     </div>
     <img src="./assets/Better.png" class="w-[635px] h-[450px] rounded-[16px]" alt="Built for real life">
+  </section>
+
+  <section class="bg-light-grey h-[396px] flex-center">
+    <div>
+      <h2>Ready to cook smarter?</h2>
+      <p class="body">Hit the button, pick a recipe, and get dinner on the table—fast.</p>
+    </div>
+    <button>Browse recipes</button>
   </section>
 </main>
 </body>
