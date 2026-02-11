@@ -26,10 +26,15 @@
             --text-8xl-line-height: 19.2px;
             --text-7xl: 32px;
             --text-7xl-line-height: 20.8;
+
+            --text-5xl: 20px;
+            --text-5xl-line-height: 22.4;
           }
            h1 { @apply font-Nunito font-black text-10xl  }
            h2 { @apply font-Nunito font-black text-8xl  }
-           h3 { @apply font-Nunito font-black text-7xl  }
+           h3 { @apply font-Nunito font-bold text-7xl  }
+
+           h5 {@apply font-Nunito font-black text-5xl}
 
           body { @apply font-Nunito text-xl text-main bg-body}
           nav { @apply flex justify-between gap-[40px] font-semibold text-[18px] tracking-[.3px] capitalize}
@@ -60,5 +65,18 @@
     </nav>
     <button class="px-[16px] py-[12px]">browse recipes</button>
   </header>
+
+  <main class="container mx-auto">
+    <section class="flex items-center gap-[64px] mt-[80px] mb-[97px]">
+    <div class="space-y-[24px]">
+      <h5 class="px-[6px] py-[2px] bg-orange rounded-[6px] tracking-[-0.5px] inline-block">Our mission</h5>
+      <h2>Help more people cook nourishing meals, 
+        more often.</h2>
+        <p class="body mb-[12px]">Healthy Recipe Finder was created to prove that healthy eating can be convenient, affordable, and genuinely delicious.</p>
+        <p class="body">We showcase quick, whole-food dishes that anyone can master—no fancy equipment, no ultra-processed shortcuts—just honest ingredients and straightforward steps.</p>
+    </div>
+    <img src="assets/imageAbout.jpg" class="w-[618px] h-[600px] rounded-[10px]" alt="Our mission">
+    </section>
+  </main>
 </body>
 </html>
