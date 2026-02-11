@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <title>Healthy Recipe Finder</title>
+  <style type="text/tailwindcss">
+    @theme{
+            /* colors  */
+            --color-main: #163A34;
+            --color-orange:#FE9F6B;
+            --color-body: #F6F5F1;
+            --color-light-grey: #E9EDE8;
+            /* fonts */
+            --font-Nunito: "Nunito", sans-serif;
+             /* text-size  */
+            --text-10xl: 72px;
+            --text-10xl-line-height: 17.6px;
+            --text-8xl: 48px;
+            --text-8xl-line-height: 19.2px;
+            --text-7xl: 32px;
+            --text-7xl-line-height: 20.8;
+          }
+           h1 { @apply font-Nunito font-black text-10xl  }
+           h2 { @apply font-Nunito font-black text-8xl  }
+           h3 { @apply font-Nunito font-black text-7xl  }
+
+          body { @apply font-Nunito text-xl text-main bg-body}
+          nav { @apply flex justify-between gap-[40px] font-semibold text-[18px] tracking-[.3px] capitalize}
+        button { @apply bg-[#163A34] text-[20px] tracking-[0.5px] font-bold text-center text-white rounded-[10px] }
+        .flex-between-center {@apply flex justify-between items-center}
+        .flex-center {@apply flex justify-center items-center}
+        .relative {@apply relative w-full}
+        img {@apply align-middle}
+        .back {@apply flex justify-center items-center w-[60px] h-[60px] rounded-[12px] bg-white border border-light-grey}
+  </style>
+
+</head>
+<body>
+  <header class="flex-between-center px-[60px] py-[20px] boder border-b border-[#E0E6E3]">
+    <img class="w-[260px] h-[40px]" src="./assets/Logo.png" alt="Logo">
+    <nav>
+      <div class="relative">
+        <a href="index.html">home</a>
+        <span class="absolute bottom-0 left-0 right-0 w-[50px] h-[3px] bg-[#FE9F6B] rounded-[4px]"></span>
+      </div>
+      <div>
+        <a href="about.html">about</a>
+      </div>
+      <div>
+        <a href="">recipes</a>
+      </div>
+
+    </nav>
+    <button class="px-[16px] py-[12px]">browse recipes</button>
+  </header>
+</body>
+</html>
