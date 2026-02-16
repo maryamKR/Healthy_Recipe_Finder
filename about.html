@@ -26,14 +26,15 @@
             --text-8xl-line-height: 19.2px;
             --text-7xl: 32px;
             --text-7xl-line-height: 20.8;
-
+             --text-6xl: 24px;
+            --text-6xl-line-height: 20.8;
             --text-5xl: 20px;
             --text-5xl-line-height: 22.4;
           }
            h1 { @apply font-Nunito font-black text-10xl  }
            h2 { @apply font-Nunito font-black text-8xl  }
            h3 { @apply font-Nunito font-bold text-7xl  }
-
+          h4 { @apply font-Nunito font-bold text-6xl}
            h5 {@apply font-Nunito font-black text-5xl}
 
           body { @apply font-Nunito text-xl text-main bg-body}
@@ -44,6 +45,8 @@
         .relative {@apply relative w-full}
         img {@apply align-middle}
         .back {@apply flex justify-center items-center w-[60px] h-[60px] rounded-[12px] bg-white border border-light-grey}
+        .feature {@apply flex items-start space-x-[20px] max-w-[756px]}
+        .features {@apply py-[96px] flex justify-between items-start gap-[64px]}
   </style>
 
 </head>
@@ -76,6 +79,33 @@
         <p class="body">We showcase quick, whole-food dishes that anyone can master—no fancy equipment, no ultra-processed shortcuts—just honest ingredients and straightforward steps.</p>
     </div>
     <img src="assets/imageAbout.jpg" class="w-[618px] h-[600px] rounded-[10px]" alt="Our mission">
+    </section>
+
+    <section class="features">
+      <h2>Why we exist</h2>
+      <div class="space-y-[48px]">
+        <div class="feature">
+          <img src="./assets/Arrow - Right.svg" alt="Arrow">
+        <div class="space-y-[12px]">
+          <h4>Cut through the noise.</h4>
+          <p>The internet is bursting with recipes, yet most busy cooks still default to take-away or packaged foods. We curate a tight collection of fool-proof dishes so you can skip the scrolling and start cooking.</p>
+        </div>
+        </div>
+        <div class="feature">
+          <img src="./assets/Arrow - Right.svg" alt="Arrow">
+        <div class="space-y-[12px]">
+          <h4>Cut through the noise.</h4>
+          <p>The internet is bursting with recipes, yet most busy cooks still default to take-away or packaged foods. We curate a tight collection of fool-proof dishes so you can skip the scrolling and start cooking.</p>
+        </div>
+        </div>
+        <div class="feature">
+          <img src="./assets/Arrow - Right.svg" alt="Arrow">
+        <div class="space-y-[12px]">
+          <h4>Cut through the noise.</h4>
+          <p>The internet is bursting with recipes, yet most busy cooks still default to take-away or packaged foods. We curate a tight collection of fool-proof dishes so you can skip the scrolling and start cooking.</p>
+        </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>
